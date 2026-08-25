@@ -53,6 +53,10 @@ Assim como o som, esse sinal bidimensional contínuo também pode ser representa
 
 No caso dos vídeos, trata-se de um “empilhamento” de imagens num instante de tempo. Por exemplo, para se obter um segundo de vídeo, há a necessidade de no mínimo 24 imagens “empilhadas”. 
 
+### 3.3 Questões
+1. Com suas palavras, explique a diferença entre um sinal contínuo (como a nossa voz) e um sinal discreto (digital).
+2. Se um vídeo é composto por imagens, como se dá a sensação de movimento ao assisti-lo?
+
 ---
 
 ## 4. Fluxo de formação da imagem
@@ -105,6 +109,10 @@ Uma vez que a luz é convertida em impulsos elétricos pelos cones e bastonetes,
 ![Espectro Eletromagnético](imagens/visao_humana.jpg) 
 Fonte: Brasil Escola
 
+### 4.5 Questões
+1. Cite as etapas básicas do fluxo de formação da imagem fotográfica, desde a cena até o arquivo final.
+2. Fazendo um paralelo com a visão humana, qual elemento do nosso olho exerce uma função semelhante à lente da câmera, e qual se assemelha ao sensor?
+
 ---
 
 ## 5. Pixel
@@ -121,6 +129,10 @@ Quanto maior o número de pixels, maior tende a ser a possibilidade de detalhame
 
 Uma imagem com resolução de 1920 × 1080 possui 2.073.600 pixels no total. Isso significa que a fotografia contém mais de dois milhões de pontos de informação visual.
 
+### 5.4 Questões
+1. Defina o que é um pixel e qual o seu papel na composição de uma imagem digital.
+2. É correto afirmar que uma imagem com mais pixels sempre terá uma qualidade superior? Justifique sua resposta.
+
 ---
 
 ## 6. Byte
@@ -135,6 +147,10 @@ O **bit** (Binary Digit) é a menor unidade de informação em um computador, po
 
 - **Caracteres (Texto):** Na computação clássica (como no padrão ASCII), cada letra, número ou pontuação digitado é representado por exatamente 1 byte (8 bits). Isso significa que cada caractere do teclado possui um código binário único.
 - **Pixels (Imagem):** Na fotografia digital, a intensidade luminosa e a cor capturadas pelo sensor são quantificadas em bytes para compor cada pixel. Se um pixel usa 1 byte de profundidade, ele pode exibir 256 tons de cinza. Se usar 3 bytes (RGB), atinge mais de 16 milhões de cores. Portanto, o byte é a estrutura essencial que constrói tanto a informação textual quanto a visual.
+
+### 6.3 Questões
+1. Explique a relação entre Bits e Bytes de forma simples.
+2. Qual a importância de compreendermos o conceito de byte quando falamos sobre a captura de cores em um pixel?
 
 ---
 
@@ -169,6 +185,10 @@ Imagens com resolução maior tendem a ocupar mais espaço de armazenamento. Iss
 
 - **PPI:** pixels por polegada, usado para relacionar imagem e impressão.
 - **DPI:** pontos por polegada, termo mais associado ao processo de impressão.
+
+### 7.6 Questões
+1. O que é a resolução de uma imagem e por que ela afeta diretamente o tamanho do arquivo no computador?
+2. Explique a diferença de se avaliar a resolução de uma imagem destinada a uma tela de celular e de outra que será impressa em um outdoor.
 
 ---
 
@@ -216,6 +236,10 @@ Esse 4º byte é conhecido como **Canal Alpha** e é o responsável exclusivo po
 **Impacto no Design:**
 Essa característica revolucionou o web design e a criação de interfaces. A possibilidade de utilizar a transparência com tamanha precisão permite recortar elementos gráficos, aplicar sombras suaves, inserir logotipos sem um fundo branco e criar layouts complexos em camadas. Sem a versatilidade desse 4º byte, composições gráficas avançadas sobrepondo diferentes imagens e cores seriam impossíveis no design digital.
 
+### 8.8 Questões
+1. Por que as telas de televisores e celulares utilizam o padrão RGB em vez de outro modo de cor?
+2. O que é o Canal Alpha e qual a sua principal aplicação prática no design e na fotografia?
+
 ---
 
 ## 9. Profundidade de cor
@@ -256,11 +280,8 @@ Se salvarmos essa imagem sem nenhuma compactação matemática (dados brutos pon
 
 A análise numérica comprova que cada canal adicional ou aumento de qualidade exigido na profundidade de cor impacta de forma direta e proporcional o peso do arquivo na memória.
 
-### 9.5 Atividade proposta
 
-Compare imagens salvas com diferentes profundidades de cor e observe o impacto no tamanho do arquivo e na qualidade de gradações.
-
-### 9.6 Redução de Profundidade em Imagens Monocromáticas
+### 9.5 Redução de Profundidade em Imagens Monocromáticas
 
 Embora uma imagem monocromática padrão utilize 8 bits (1 byte) por pixel para formar os tradicionais 256 tons de cinza, é plenamente possível trabalhar com profundidades inferiores. O ato de remover bits diminui as combinações possíveis, criando transições mais duras entre as cores e arquivos ainda mais leves.
 
@@ -282,7 +303,7 @@ Imagens com 2 tons de cinza possuem alguma aplicação prática? Discuta com seu
 
 ![Sensor convertendo luz em dados elétricos](imagens/profundidade_ALL.jpg)
 
-### 9.7 A relação entre Imagens Binárias e Aplicações Multimídia
+### 9.6 A relação entre Imagens Binárias e Aplicações Multimídia
 
 A resposta para a discussão prática é afirmativa: existe uma associação direta e fundamental entre **imagens binárias (1 bit)** e a técnica de **silhuetas** em aplicações de multimídia. Na computação gráfica, no web design e na visão computacional, essa estrutura de 1 bit é a base matemática para o que chamamos de **Máscaras de Silhueta (Alpha Masks)** ou **Máscaras de Recorte**.
 
@@ -296,6 +317,10 @@ Veja como essa associação acontece na prática:
 
 
 Portanto, a imagem de 1 bit deixa de ser apenas uma "foto preta e branca de baixa qualidade" e se torna uma **ferramenta de controle** poderosíssima: ela diz ao software exatamente "onde o objeto existe" (1) e "onde ele não existe" (0).
+
+### 9.7 Questões
+1. Defina profundidade de cor e cite pelo menos uma vantagem e uma desvantagem de se usar uma profundidade muito alta (como 24 ou 32 bits).
+2. Dê um exemplo prático de onde utilizamos uma imagem binária (de apenas 1 bit) e explique por que ela é útil para os computadores.
 
 ---
 
@@ -366,6 +391,10 @@ O sensor influencia:
 - Ruído digital.
 - Velocidade de processamento.
 
+### 10.5 Questões
+1. Qual é a principal função do sensor em uma câmera digital?
+2. Atualmente, os sensores CMOS dominam o mercado em relação aos CCDs. Cite um motivo arquitetural ou prático que justifique essa preferência.
+
 ---
 
 ## 11. Memória e armazenamento
@@ -391,6 +420,10 @@ Após a captura, a imagem precisa ser armazenada em um cartão de memória ou ou
 ### 11.4 Importância do armazenamento
 
 Na fotografia digital, o armazenamento faz parte do fluxo de trabalho. Um sistema de memória inadequado pode comprometer a segurança dos arquivos e a continuidade da produção.
+
+### 11.5 Questões
+1. Por que é recomendável formatar o cartão de memória diretamente na câmera, ao invés de apenas deletar os arquivos pelo computador?
+2. Cite duas boas práticas essenciais para evitar a perda de fotografias durante ou após um trabalho.
 
 ---
 
@@ -448,6 +481,10 @@ Formato frequentemente usado para imagens com transparência e elementos gráfic
 | TIFF | Alta qualidade para preservação | Peso elevado | Arquivamento e trabalho profissional |
 | PNG | Transparência e boa qualidade | Pode ser mais pesado que JPEG | Web e gráficos |
 
+### 12.7 Questões
+1. Em quais situações um fotógrafo deve dar preferência por salvar suas imagens no formato RAW e não em JPEG?
+2. Se você precisa salvar uma logomarca para um site e precisa que o fundo seja transparente, qual o formato ideal e por quê?
+
 ---
 
 ## 13. Relação entre qualidade e finalidade
@@ -462,54 +499,14 @@ Nem sempre o melhor arquivo é o mais pesado. O formato ideal depende da finalid
 
 O fotógrafo deve compreender o propósito da imagem antes de escolher o formato de exportação.
 
----
-
-## 14. Exercícios de fixação
-
-### Exercício 1
-Explique o caminho percorrido pela luz até se transformar em uma imagem digital.
-
-### Exercício 2
-Qual é a diferença entre pixel e resolução?
-
-### Exercício 3
-Por que uma imagem com maior resolução tende a ocupar mais espaço?
-
-### Exercício 4
-Qual a diferença entre RGB e escala de cinza?
-
-### Exercício 5
-Qual formato de arquivo você usaria em cada situação abaixo?
-- Edição avançada.
-- Publicação em rede social.
-- Arquivamento profissional.
-- Imagem com transparência.
+### 13.1 Questões
+1. "O arquivo mais pesado e com maior resolução é sempre o melhor formato para qualquer situação." Você concorda com essa afirmação? Explique.
+2. Dê um exemplo de uma situação em que exportar a foto com qualidade máxima e formato pesado pode ser prejudicial ao invés de vantajoso.
 
 ---
 
-## 15. Atividade prática orientada
 
-Escolha uma mesma fotografia e faça as seguintes observações:
-
-1. Verifique sua resolução.
-2. Identifique o modo de cor.
-3. Observe o tamanho do arquivo.
-4. Compare o resultado ao exportar em JPEG e PNG.
-5. Se possível, compare com uma versão em RAW.
-
-Elabore um pequeno relatório com suas conclusões.
-
----
-
-## 16. Síntese da unidade
-
-Nesta unidade, o estudante aprendeu que a fotografia digital resulta da conversão da luz em dados. Foram estudados os principais elementos que compõem a imagem digital: pixel, resolução, modo de cor, profundidade de cor, sensor, memória e formatos de arquivo.
-
-Também foi possível compreender que a escolha do formato de imagem depende da finalidade de uso e que a qualidade final está relacionada não apenas ao número de pixels, mas ao conjunto de fatores técnicos do processo fotográfico.
-
----
-
-## 17. Encerramento
+## 14. Encerramento
 
 A formação da imagem digital é o fundamento técnico da fotografia contemporânea. Entender esse processo permite ao estudante tomar decisões mais conscientes na captura, no tratamento e na entrega das imagens.
 
